@@ -1,0 +1,53 @@
+*{
+  font-family: 맑은고딕, Malgun Gothic, dotum, gulim, sans-serif;
+}
+
+body {
+  background: radial-gradient(gold, goldenrod);
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+img {
+  padding: 10px;
+}
+
+img:hover {
+    animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;
+}
+
+@keyframes shake {
+  10%, 90% {
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+  }
+
+  20%, 80% {
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+  }
+
+  30%, 50%, 70% {
+      -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  }
+
+  40%, 60% {
+      -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  }
+}
