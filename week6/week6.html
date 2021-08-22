@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>숫자야구 (Bulls and Cows)</title>
+	<link rel="stylesheet" href="week6.css">
+	<script src="week6.js"></script>
+	<h1>숫자야구 게임</h1>
+</head>
+<body>
+	<!--float 특정 요소 정렬할 때 사용하는 css 속성 / 묶음 태그에만 적용 가능-->
+	<!--1)none block의 기본값, 정렬x 2)left 왼쪽 정렬 3)right 우측 정렬-->
+	<!--4)initial 기본값으로 설정 5)inherit 부모요소로부터 상속-->
+	<div>
+		<p>0 ~ 9 중에서 숫자를 입력한 후, "결과 보기" 버튼을 누르세요. </p>
+   
+		<!-- ──────────────── 입력 부분 ──────────────── --> 
+		<form id="formArea">
+			<input type="text" class="text" /><input type="text" class="text" />
+			<input type="text" class="text" /><input type="text" class="text" />
+		</form>
+   
+		<button onclick="bullsAndCows()"> 결과 보기 </button>
+		<button onclick="reStarting(); deleteText()"> 새로 시작하기 </button>
+   
+		<p id="check_Correct"></p>
+   </div>
+   <!--table-->
+   <!--th:테이블의 헤더부분을 만드는 태그 
+	   tr:테이블의 행을 만드는 태그 
+	   td:테이블의 열을 만드는 태그 -->
+	<!--&nbsp; :깨지지 않는 공백?..잘림방지공백?.. 어쨌든 공백-->
+   <table style="width: 50%; margin:auto;" border="1">
+	<!--th colspan="number" / number만큼 열 확장-->
+		<thead style="background-color: aqua;"><tr><th colspan="3"> SCORE </th></tr></thead>
+   
+		<!-- ──────────────── 출력 부분 ──────────────── --> 
+		<tbody id="tbodyArea">
+			<tr><td> 1회 </td><td style="width: 38%;">&nbsp;</td><td style="width: 38%;">&nbsp;</td></tr>
+			<tr><td> 2회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 3회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 4회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 5회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 6회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 7회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 8회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			<tr><td> 9회 </td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		</tbody>
+   
+   </table>
+   
+   <p style="clear: both"><p>
+   
+	<script src="week6.js">
+		
+	</script>
+</body>
+</html>

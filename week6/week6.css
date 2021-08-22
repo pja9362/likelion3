@@ -1,0 +1,33 @@
+body, body * { 
+    text-align: center;
+    align-items: center;
+    margin: 0px; padding: 0px; 
+    font-family: 'New Gulim', '새굴림', Gulim, Arial, sans-serif; 
+    font-size: 12px; 
+    line-height: 1.7; 
+
+} 
+
+h1 {
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 1500;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(63, 130, 207);
+}
+
+button {
+    background-color: azure;
+    border: 1px solid;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#formArea * { margin-bottom: 20px; } 
+#formArea br { margin-bottom: 0px; } 
+#formArea input.text { margin-right: 10px; width: 30px; text-align: center; } 
+
+#tbodyArea td { padding: 2px 5px; text-align: center; } 
+
+#check_Correct { margin-top: 10px } 
